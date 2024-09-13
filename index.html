@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruitique</title>
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- REMIXICON CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="theme">
+
+         <!--==================== HEADER ====================-->
+         <header class="header" id="header">
+          <nav class="nav container">
+            <a href="" class="nav__logo">
+              <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-0.5 -0.5 16 16"
+          fill="#ffa500"
+          id="Orange-Fill--Streamline-Phosphor-Fill"
+          height="30"
+          width="30"
+        >
+          <desc>Orange Fill Streamline Icon: https://streamlinehq.com</desc>
+          <path
+            d="M9.900744140625001 4.24173046875c1.32903515625 -0.702322265625 2.161078125 -2.0816660156249998 2.162443359375 -3.584859375 0 -0.27993749999999995 -0.22693359375000002 -0.5068710937500001 -0.5068710937500001 -0.5068710937500001h-0.5068710937500001c-1.475748046875 0.0005625 -2.834677734375 0.80281640625 -3.548109375 2.094650390625C6.787904296875 0.9528164062499999 5.4289746093749995 0.1505625 3.9532265625000003 0.15h-0.5068710937500001c-0.390193359375 0 -0.634060546875 0.422390625 -0.438966796875 0.760306640625 0.09054492187499999 0.1568203125 0.257888671875 0.2534296875 0.438966796875 0.25343554687500003h0.5068710937500001c1.4935078125 0.00205078125 2.7652792968749997 1.086544921875 3.00322265625 2.5609746093749997C2.684765625 4.14282421875 0.467578125 9.028376953125 2.96551171875 12.518712890625c2.49793359375 3.490330078125 7.83753515625 2.967697265625 9.61128515625 -0.94074609375 1.2553300781249999 -2.766099609375 0.06544921875 -6.028072265624999 -2.6760527343750002 -7.3362363281250005Zm1.10625 -3.07798828125c-0.246662109375 1.446427734375 -1.48920703125 2.511615234375 -2.9563359375 2.5343671875 0.246662109375 -1.446427734375 1.48920703125 -2.511615234375 2.9563359375 -2.5343671875Zm0.035478515625000005 8.70046875c-0.267076171875 1.50519140625 -1.445443359375 2.68355859375 -2.95062890625 2.9506347656250003 -0.02765625 0.00448828125 -0.055617187500000005 0.0068203125 -0.08363671875 0.006966796875 -0.3901875 -0.0005859375 -0.633421875 -0.42333984375 -0.43782421875 -0.760962890625 0.075732421875 -0.13072265624999999 0.205828125 -0.220845703125 0.354826171875 -0.2458125 1.08036328125 -0.191958984375 1.926134765625 -1.0377246093749999 2.11809375 -2.11809375 0.067916015625 -0.384234375 0.5263125 -0.5508574218750001 0.82510546875 -0.29991796875 0.136130859375 0.114322265625 0.20241796875 0.29159765625 0.17469726562500001 0.467185546875Z"
+            stroke-width="1"
+          ></path>
+        </svg>
+        <h1 class="logo-text">Fruitique</h1>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">About Us</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#services" class="nav__link">Services</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#fruits" class="nav__link">Fruits</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contact Us</a>
+                </li>
+
+                <li class="nav__item">
+                    <i class="ri-moon-line change-theme nav__link" id="theme-button"></i>
+                </li>
+              </ul>
+
+              <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+              <!-- Search Button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login Button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle Button -->
+              <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+              </div>
+            </div>
+          </nav>
+         </header>
+
+         <!--==================== SEARCH ====================-->
+         <div class="search" id="search">
+          <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+          </form>
+
+          <i class="ri-close-line search__close" id="search-close"></i>
+         </div>
+
+         <!--==================== LOGIN ====================-->
+         <div class="login" id="login">
+          <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+              <div>
+                <label for="email" class="login__label">Email</label>
+                <input type="email" placeholder="Write Your Email" id="email" class="login__input">
+              </div>
+
+              <div>
+                <label for="password" class="login__label">Password</label>
+                <input type="password" placeholder="Enter Your Password" id="password" class="login__input">
+              </div>
+            </div>
+
+            <div>
+              <p class="login__signup">
+                You do not have an account?<a href="#">Sign up</a>
+              </p>
+
+              <a href="#" class="login__forgot">
+                You forgot your password?
+              </a>
+
+              <button type="submit" class="login__button">Log In</button>
+            </div>
+
+          </form>
+          <i class="ri-close-line login__close" id="login-close"></i>
+         </div>
+
+
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <div class="hero-carousel">
+        <!-- list item -->
+          <div class="hero-list">
+            <div class="hero-list-item">
+              <img src="assets/images/hero-banner-1.jfif" alt="hero banner">
+              <div class="hero-content">
+                <div class="hero-author">FRUITIQUE</div>
+                <div class="hero-title">ETHERAL FRUIT</div>
+                <div class="hero-topic">HAVEN</div>
+                <div class="hero-desc">
+                  At  Fruitique, we believe in the power of 
+            nature's bounty. Our mission is to provide you 
+            with the freshest, highest quality fruits directly 
+            from the farm to your table. Whether you're looking 
+            for seasonal favorites or exotic delights, we've got 
+            you covered. Thank you for choosing us as your trusted 
+            source for all things fruity!
+                </div>
+                <div class="hero-buttons">
+                  <button>SHOP NOW</button>
+                  <button href="#contact">CONTACT US</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-list-item hero-list-item-1">
+              <img src="assets/images/hero-orange-1.jfif" alt="hero banner">
+              <div class="hero-content">
+                <div class="hero-author">FRUITIQUE</div>
+                <div class="hero-title">SUNBURST <span>CITRUS</span></div>
+                <div class="hero-topic">BLISS</div>
+                <div class="hero-desc">
+                  Oranges are nature’s radiant gems, bursting with a symphony of tangy sweetness and invigorating zest. Each juicy segment offers a vibrant explosion of flavor, wrapped in a sunlit hue that brightens every moment. Whether savored as a refreshing snack or transformed into a revitalizing juice, oranges are a sublime fusion of indulgence and vitality, elevating every experience with their extraordinary, golden brilliance.
+                </div>
+                <div class="hero-buttons">
+                  <button>SHOP NOW</button>
+                  <button>CONTACT US</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-list-item hero-list-item-2">
+              <img src="assets/images/hero-grapes-1.jfif" alt="hero banner">
+              <div class="hero-content">
+                <div class="hero-author">FRUITIQUE</div>
+                <div class="hero-title">VELVET <span>GRAPE</span></div>
+                <div class="hero-topic">ESSENCE</div>
+                <div class="hero-desc">
+                  Grapes are nature’s opulent jewels, each cluster a burst of celestial sweetness and succulent texture. Their enchanting flavor dances on the palate, a symphony of lush, vibrant notes that transform any moment into a luxurious escape. Whether enjoyed fresh, as a refined snack, or woven into sophisticated dishes, grapes offer an exquisite experience, capturing the essence of indulgence and elegance in every bite.
+                </div>
+                <div class="hero-buttons">
+                  <button>SHOP NOW</button>
+                  <button>CONTACT US</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-list-item hero-list-item-3">
+              <img src="assets/images/hero-guava-1.jfif" alt="hero banner">
+              <div class="hero-content">
+                <div class="hero-author">FRUITIQUE</div>
+                <div class="hero-title">LUSH <span>GUAVA</span></div>
+                <div class="hero-topic">EUPHORIA</div>
+                <div class="hero-desc">
+                  Guavas are nature’s exotic marvel, with a fragrant aroma and a burst of tropical sweetness in every bite. Their creamy, pink flesh unfolds a symphony of rich, succulent flavors, making each taste an unforgettable escape to paradise. Whether savored fresh or blended into decadent creations, guavas deliver an unparalleled experience of indulgent luxury and vibrant zest, captivating the senses with every mouthful.
+                </div>
+                <div class="hero-buttons">
+                  <button>SHOP NOW</button>
+                  <button>CONTACT US</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL -->
+           <div class="thumbnail">
+
+            <div class="thumbnail-item">
+              <img src="assets/images/hero-orange-1.jfif" alt="">
+              <div class="thumbnail-content">
+                <div class="thumbnail-title">Oranges</div>
+                <div class="thumbnail-desc">
+                  Experience the zest of perfection.
+                </div>
+              </div>
+            </div>
+
+            <div class="thumbnail-item">
+              <img src="assets/images/hero-grapes-1.jfif" alt="">
+              <div class="thumbnail-content">
+                <div class="thumbnail-title">Grapes</div>
+                <div class="thumbnail-desc">
+                  Indulge in nature's sweetest gems.
+                </div>
+              </div>
+            </div>
+
+            <div class="thumbnail-item">
+              <img src="assets/images/hero-guava-1.jfif" alt="">
+              <div class="thumbnail-content">
+                <div class="thumbnail-title">Guavas</div>
+                <div class="thumbnail-desc">
+                  Discover the vibrant taste sensation.
+                </div>
+              </div>
+            </div>
+
+            <div class="thumbnail-item">
+              <img src="assets/images/hero-banner-1.jfif" alt="">
+              <div class="thumbnail-content">
+                <div class="thumbnail-title">Fruitique</div>
+                <div class="thumbnail-desc">
+                  Taste the world's finest fruits.
+                </div>
+              </div>
+            </div>
+
+           </div>
+
+           <!-- ARROWS -->
+            <div class="thumbnail-arrows">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+
+            <div class="time"></div>
+      </div>
+
+      <!-- ABOUT US -->
+      <section class="about" id="about">
+        <h1 class="about-title">About<span> Us</span></h1>
+        <div class="about-container">
+          <div class="about-img">
+            <img src="assets/images/about-img.png" alt="">
+          </div>
+          <div class="about-text">
+            <h1>Fruitique</h1>
+            <h2>Why to Choose us<span>?</span></h2>
+            <p>
+              At Fruitique, we are passionate about bringing you the freshest, most delicious fruits directly from the farm. Our commitment is to quality and sustainability, ensuring every bite is a burst of nature's goodness. Taste the difference today.
+            </p>
+            <p>
+              We believe in the power of wholesome, natural produce to nourish your body and uplift your spirit. That's why we carefully select only the finest fruits, grown with love and care by dedicated farmers who share our passion for quality and sustainability.
+            </p>
+            <p>
+              From exotic delights to familiar favorites, our selection celebrates the diversity of nature's bounty. Each piece of fruit is a testament to our promise of freshness and flavor, ensuring that when you choose Fruitique, you're choosing the very best for you and your loved ones.
+            </p>
+            <div class="about-button">
+              <button class="about-btn">Know More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="services section">
+        <h2 class="service-title">
+          Our Services
+        </h2>
+
+        <div class="services__container">
+
+           <article class="services__card">
+            <div class="service__images">
+              <img src="assets/images/service-orange.svg" class="services__icon" alt="">
+              <img src="assets/images/dark-service-orange.png" class="dark-service-icon" alt="">
+            </div>              
+              <h2 class="services__title">Orange</h2>
+
+              <button class="services__button">Know More</button>
+
+              <div class="services__modal">
+                 <div class="services__modal-content">
+                    <i class="ri-close-line services__modal-close"></i>
+
+                    <h2 class="services__modal-title">Oranges</h2>
+
+                    <ul class="services__modal-list grid">
+                       <li class="services__modal-item">
+                        Oranges deliver a burst of sunshine in every bite.
+                       </li>
+
+                       <li class="services__modal-item">
+                        They offer a tangy sweetness and refreshing zest.
+                       </li>
+
+                       <li class="services__modal-item">
+                        Rich in vitamin C, they are a delicious and nutritious choice.
+                       </li>
+
+                       <li class="services__modal-item">
+                        Perfect for brightening your day as a snack or fresh juice.
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+
+           </article>
+
+           <article class="services__card">
+            <img src="assets/images/service-grapes.svg" class="services__icon" alt="">
+            <img src="assets/images/dark-service-grapes.png" class="dark-service-icon" alt="">
+            <h2 class="services__title">Grapes</h2>
+
+              <button class="services__button">Know More</button>
+
+              <div class="services__modal">
+                 <div class="services__modal-content">
+                    <i class="ri-close-line services__modal-close"></i>
+
+                    <h2 class="services__modal-title">Grapes</h2>
+
+                    <ul class="services__modal-list grid">
+                       <li class="services__modal-item">
+                        Grapes are nature’s bite-sized luxury.
+                       </li>
+
+                       <li class="services__modal-item">
+                        They offer a sweet and refreshing taste in every juicy cluster.
+                       </li>
+
+                       <li class="services__modal-item">
+                        Their versatile flavor is ideal for snacking.
+                       </li>
+
+                       <li class="services__modal-item">
+                        They add a touch of elegance to any dish.
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </article>
+
+           <article class="services__card">
+            <img src="assets/images/service-guava.svg" class="services__icon" alt="">
+            <img src="assets/images/dark-service-guava.png" class="dark-service-icon" alt="">
+            <h2 class="services__title">Guava</h2>
+
+              <button class="services__button">Know More</button>
+
+              <div class="services__modal">
+                 <div class="services__modal-content">
+                    <i class="ri-close-line services__modal-close"></i>
+
+                    <h2 class="services__modal-title">Guava</h2>
+
+                    <ul class="services__modal-list grid">
+                       <li class="services__modal-item">
+                        Guavas are tropical treasures, bursting with vibrant flavor and aroma.
+                       </li>
+
+                       <li class="services__modal-item">
+                        Sweet and tangy, their taste is a symphony of delight.
+                       </li>
+
+                       <li class="services__modal-item">
+                        Versatile and adaptable, guavas elevate any dish.
+                       </li>
+
+                       <li class="services__modal-item">
+                        A feast for the eyes, their beauty is matched by their flavor.
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </article>
+
+        </div>
+     </section>
+
+      <!-- FRUITS INFO SECTION -->
+      <section class="fruits" id="fruits">
+        <div class="fruits-head">
+          <h1 class="fruits-title">Fresh Fruits</h1>
+          <p class="para-info">
+            Nature’s sweetest treats, delivered fresh to your table.
+          </p>
+        </div>
+
+        <div class="fruits-container">
+          <div class="fruits-box">
+            <div class="fruits-text">
+              <h2 class="fruit-title">Best Fresh Oranges</h2>
+              <p class="fruits-info">
+                Experience the vibrant burst of flavor with our premium oranges—juicy, sweet, and packed with refreshing citrus goodness. Perfectly ripe and freshly picked, they’re a zesty delight in every bite.
+              </p>
+
+              <div data-tooltip="Price:-$20" class="button">
+                <div class="button-wrapper">
+                  <div class="text">Buy Now</div>
+                  <span class="icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      class="bi bi-cart2"
+                      fill="currentColor"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fruits-img">
+              <img src="assets/images/orange.png" alt="oranges" />
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="fruits-box">
+            <div class="fruits-text">
+              <h2 class="fruit-title">Best Fresh Grapes</h2>
+              <p class="fruits-info">
+                Indulge in the natural sweetness of our handpicked grapes, bursting with juicy flavor in every bite. Whether snacking or adding to your favorite dishes, these grapes promise a delightful and succulent experience.
+              </p>
+
+              <div data-tooltip="Price:-$40" class="button">
+                <div class="button-wrapper">
+                  <div class="text">Buy Now</div>
+                  <span class="icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      class="bi bi-cart2"
+                      fill="currentColor"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fruits-img">
+              <img src="assets/images/grapes.png" class="grapes" alt="grapes" />
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="fruits-box">
+            <div class="fruits-text">
+              <h2 class="fruit-title">Best Fresh Guavas</h2>
+              <p class="fruits-info">
+                Discover the tropical charm of our ripe guavas, offering a unique blend of sweet and tangy flavors. Packed with nutrients and bursting with freshness, these guavas are a true taste of paradise.
+              </p>
+
+              <div data-tooltip="Price:-$10" class="button">
+                <div class="button-wrapper">
+                  <div class="text">Buy Now</div>
+                  <span class="icon">
+                    <svg
+                      viewBox="0 0 16 16"
+                      class="bi bi-cart2"
+                      fill="currentColor"
+                      height="16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fruits-img">
+              <img src="assets/images/guava.png" alt="Guavas" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL SECTION -->
+      <div class="testi-container">
+
+        <div class="testi-con">
+
+          <div class="contents-wrapper">
+
+            <section class="testi-header">
+              <h1>Testimonial</h1>
+            </section>
+
+            <section class="testRow">
+              <div class="testItem active">
+                <img src="assets/images/testimonial-1.png" alt="John Doe">
+                <h3>John Doe</h3>
+                <h4>San Francisco, USA</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Nulla dolore esse quaerat magnam modi, eligendi cumque 
+                  voluptates nobis voluptate harum velit laboriosam delectus 
+                  amet fuga architecto, neque consectetur unde deleniti error 
+                  quae dolorem explicabo ipsa mollitia?</p>
+              </div>
+
+              <div class="testItem">
+                <img src="assets/images/testimonial-2.png" alt="Alexa John">
+                <h3>Alexa John</h3>
+                <h4>Washington, USA</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Nulla dolore esse quaerat magnam modi, eligendi cumque 
+                  voluptates nobis voluptate harum velit laboriosam delectus 
+                  amet fuga architecto, neque consectetur unde deleniti error 
+                  quae dolorem explicabo ipsa mollitia?</p>
+              </div>
+
+              <div class="testItem">
+                <img src="assets/images/testimonial-3.png" alt="Froger Natsy">
+                <h3>Froger Natsy</h3>
+                <h4>Mexico, USA</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Nulla dolore esse quaerat magnam modi, eligendi cumque 
+                  voluptates nobis voluptate harum velit laboriosam delectus 
+                  amet fuga architecto, neque consectetur unde deleniti error 
+                  quae dolorem explicabo ipsa mollitia?</p>
+              </div>
+
+              <div class="testItem">
+                <img src="assets/images/testimonial-4.png" alt="Akash Verma">
+                <h3>Akash Verma</h3>
+                <h4>Mumbai, India</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Nulla dolore esse quaerat magnam modi, eligendi cumque 
+                  voluptates nobis voluptate harum velit laboriosam delectus 
+                  amet fuga architecto, neque consectetur unde deleniti error 
+                  quae dolorem explicabo ipsa mollitia?</p>
+              </div>
+
+              <div class="testItem">
+                <img src="assets/images/testimonial-5.webp" alt="M. Saifullah">
+                <h3>M.Saifullah</h3>
+                <h4>Hyderabad, Pakistan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Nulla dolore esse quaerat magnam modi, eligendi cumque 
+                  voluptates nobis voluptate harum velit laboriosam delectus 
+                  amet fuga architecto, neque consectetur unde deleniti error 
+                  quae dolorem explicabo ipsa mollitia?</p>
+              </div>
+            </section>
+
+            <section class="indicators">
+              <div class="dot active" attr="0" onclick="switchTest(this)"></div>
+              <div class="dot" attr="1" onclick="switchTest(this)"></div>
+              <div class="dot" attr="2" onclick="switchTest(this)"></div>
+              <div class="dot" attr="3" onclick="switchTest(this)"></div>
+              <div class="dot" attr="4" onclick="switchTest(this)"></div>
+            </section>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTACT US -->
+       <section class="contact" id="contact">
+        <div class="contactUs">
+          <div class="title">
+            <h1>Get in <span>Touch</span></h1>
+          </div>
+          <div class="con-box">
+
+            <!-- FORM -->
+            <div class="con-contact form">
+              <h3>Send a Message</h3>
+              <form id="contact-form">
+                <div class="formBox">
+                  <div class="row50">
+                    <div class="inputBox">
+                      <span>First Name</span>
+                      <input type="text" name="user_name" placeholder="Saifullah">
+                    </div>
+                    <div class="inputBox">
+                      <span>Last Name</span>
+                      <input type="text" placeholder="Khan">
+                    </div>
+                  </div>
+                  
+                  <div class="row50">
+                    <div class="inputBox">
+                      <span>Email</span>
+                      <input type="email" name="user_email" placeholder="Ex: name12@gmail.com">
+                    </div>
+                    <div class="inputBox">
+                      <span>Mobile</span>
+                      <input type="text" placeholder="+92 300-3094947">
+                    </div>
+                  </div>
+
+                  <div class="row100 textarea">
+                    <div class="inputBox">
+                      <span>Message</span>
+                      <textarea name="user_message" placeholder="Write your message here..."></textarea>
+                    </div>
+                  </div>
+
+                  <div class="row100">
+                    <div class="inputBox">
+                      <input type="submit" value="Send">
+                    </div>
+                  </div>
+
+                  <div class="row100">
+                    <p class="contact_message" id="contact-message"></p>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+
+            <!-- INFO -->
+            <div class="con-contact info">
+              <h3>Contact Info</h3>
+              <div class="infoBox">
+                <div>
+                  <span><i class="ri-map-pin-line"></i></span>
+                  <p>Latifabad no 8, Hyderabad Pakistan</p>
+                </div>
+
+                <div>
+                  <span><i class="ri-mail-line"></i></span>
+                  <a href="mailto:khanmuhammadsaifullah23@gmail.com">khanmuhammadsaifullah23@gmail.com</a>
+                </div>
+
+                <div>
+                  <span><i class="ri-phone-line"></i></span>
+                  <a href="tel:+923003094947">+92 300-3094947</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="con-contact map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3605.0380087082067!2d68.36721340000001!3d25.3700426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1723634695846!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- FOOTER -->
+        <footer>
+          <div class="footerContainer">
+            <div class="socialIcons">
+              <a href=""><i class="ri ri-facebook-fill"></i></a>
+              <a href=""><i class="ri ri-instagram-line"></i></a>
+              <a href=""><i class="ri ri-twitter-x-fill"></i></a>
+              <a href=""><i class="ri-linkedin-fill"></i></a>
+              <a href=""><i class="ri ri-youtube-fill"></i></a>
+            </div>
+            <div class="footerNav">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Fruits</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Get a Quote</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footerBottom">
+            <p>Copyright &copy; 2024 All rights reserved by <span class="designer">Saifullah</span></p>
+          </div>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+    
+    <!-- =============== EMAIL JS =============== -->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  </body>
+</html>
